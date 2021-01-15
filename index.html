@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/normalize.css">
+
+
+
+    <title>Rock paper scissors</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="innerContainer">
+            <div class="boxContainer">
+                <div class="mainscore player">Rock, paper, scissors</div>
+                <!-- box I -->
+                <div class="mainbox containerPlayer">
+                    <div class="fontTitle player" id="player1">
+                        <span>Player 1</span>
+                        <input type="text" placeholder="Your name..." class="playerInput1 inputStyle"> 
+                    </div>
+
+                    <div class="imageContainer" id="playerImage1" style="background-image:url(images/smiley-face.png)">
+                    </div>
+
+                    <div class="keyboard">
+                        <div class="miniTitle">Keywords</div>
+
+                        <div class="keys">
+                            <span>
+                                A
+                                <div class="info">rock</div>
+                            </span>
+                            <span>
+                                S
+                                <div class="bottom info">paper</div>
+                            </span>
+                            <span>
+                                D
+                                <div class="right info">scissors</div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- box II -->
+                <div class="mainbox containerScore">
+                    <div class="tooltip scores">
+                        <span id="player1Score">0</span>
+                        <span>:</span>
+                        <span id="player2Score">0</span>
+                    </div>
+                    <button class="big-button">Start</button>
+                    <button class="big-button" id="retry">Retry</button>
+                    <div class="timer">Timer: <span id="time">5</span>
+                    </div>
+                </div>
+
+                <!-- box III -->
+                <div class="mainbox containerPlayer">
+                    <div class="fontTitle player" id="player2">
+                        <span>Player 2</span>
+                        <input type="text" placeholder="Your name..." class="playerInput2 inputStyle">
+                    </div>
+
+                    <div class="imageContainer" id="playerImage2" style="background-image:url(images/smiley-face.png)">
+                    </div>
+
+                    <div class="keyboard">
+                        <div class="miniTitle">Keywords</div>
+
+                        <div class="keys">
+                            <span>
+                                J
+                                <div class="info">rock</div>
+                            </span>
+                            <span>
+                                K
+                                <div class="bottom info">paper</div>
+                            </span>
+                            <span>
+                                L
+                                <div class="right info">scissors</div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+
+
+</body>
+
+</html>
